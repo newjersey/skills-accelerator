@@ -1,5 +1,5 @@
 
-.content-wrapper{
+.list-wrapper{
   position: relative;
   overflow: hidden;
 }
@@ -168,7 +168,7 @@ color:rgba(0,66,0,1);
   border: 3px solid rgba(165,209,72,1);
   border-radius: 100px;
 }
-.wrapper-hero{
+.wrapper{
   overflow: hidden;
 }
 
