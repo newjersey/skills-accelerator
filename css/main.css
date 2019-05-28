@@ -201,7 +201,7 @@ display:block;
 .mod-1 img{
   width: 25%;
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-2{
@@ -212,7 +212,7 @@ display:block;
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .mod-2 img{
-  width: 25%;
+  width: 24%;
   height: auto;
   padding-bottom: 15px;
   display: inline-block;
@@ -227,7 +227,7 @@ display:block;
 .mod-3 img{
   width: 35%;
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-4{
@@ -253,7 +253,7 @@ display:block;
 .mod-5 img{
   width: 35%;
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-6{
@@ -278,7 +278,7 @@ display:block;
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .mod-7 img{
-  width: 40%;
+  width: 35%;
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
@@ -304,7 +304,7 @@ display:block;
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .mod-9 img{
-  width: 18%;
+  width: 20%;
   height: auto;
   padding-bottom: 15px;
   display: inline-block;
@@ -320,7 +320,8 @@ display:block;
 .mod-10 img{
   width: 60%;
   height: auto;
-  padding-bottom: 25px;
+  padding-top: 20px;
+  padding-bottom: 40px;
   display: inline-block;
 }
 .separator{
