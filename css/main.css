@@ -197,6 +197,8 @@ display:block;
 }
 .mod-1:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  text-decoration: none;
+  color: #D1484D;
 }
 .mod-1 img{
   width: 25%;
@@ -337,7 +339,6 @@ display:block;
   background-color: #ffffff;;
   margin-left: auto; 
   margin-right: auto;
-
 }
 
 .col-2p img{
@@ -383,9 +384,10 @@ display:block;
 .state-header a{
   color: #ffffff;
 }
-
-.bar-1, .bar-2, .bar-3 {
+.bar-main-color{
   background-color: #0066CC;
+}
+.bar-1, .bar-2, .bar-3 {
   width: 35px;
   height: 5px;
   margin: 6px 10px;
@@ -408,7 +410,6 @@ display:block;
 }
 
 .center-text h1{
-
   color: #ffffff;
   font-weight: 200;
 }
@@ -419,16 +420,18 @@ display:block;
 .center-text p{
   color: #ffffff;
   opacity: 0.8;
-  font-weight: 100;
+  font-weight: 200;
 }
-.custom-button {
+.home-btn{
   color: #004200;
   background-color: #A5D148;
+}
+.custom-button {
   border-radius: 0;
   position: absolute;
   padding: 0.75rem 2.25rem;
 }
-.custom-button:hover{
+.home-btn:hover{
   color:#004200;
   background-color:#A5D148;
   border: 3px solid #A5D148;
@@ -466,6 +469,7 @@ display:block;
   .hero{
     height: 100%;
   }
+  
   .list-column {
     width: 100%;
     text-align: center;

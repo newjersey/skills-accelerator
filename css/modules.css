@@ -1,0 +1,97 @@
+.module-hero{
+  background-color: rgba(209,72,77,0.2);
+  height: 100%;
+  z-index: 0;
+  padding-left: 15%;
+  padding-right: 15%;
+  padding-bottom: 5%;
+}
+
+.module-hero .center-text h1{
+  color: #D1484D;
+  font-weight: 200;
+}
+.module-hero .center-text h5{
+  color: #D1484D;
+  opacity: 0.6;
+}
+.module-hero .center-text p{
+  color: #D1484D;
+  opacity: 0.8;
+  font-weight: 200;
+  padding-bottom: 40px;
+}
+.bar-color-mod1{
+  background-color: rgba(209,72,77,0.5);
+}
+.module-hero img{
+  width: 70%;
+  height: auto;
+  border: 5px solid rgba(209,72,77,1);
+}
+.module-1-btn{
+  color: #ffffff;
+  background-color: rgba(209,72,77,1);
+}
+.module-1-btn:hover{
+  color:#ffffff;
+  background-color:rgba(209,72,77,1);
+  border: 3px solid rgba(209,72,77,1);
+}
+.buttons-row{
+  width: 100%;
+  padding-top: 25px;
+  text-align: center;
+  margin-left: 50px;
+  
+}
+.buttons-row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+.buttons-two{
+  width: 45%;
+  float: left;
+  height: auto;
+  margin-right: 2%;
+  font-weight: 600;
+}
+.prev-btn{
+  color: #D1484D;
+  background-color: rgba(64,20,22,0.8);
+  border-radius: 0;
+  padding: 0.75rem 2.25rem;
+}
+.buttons-two:hover{
+  text-decoration: none;
+  color:#D1484D;
+}
+.nxt-btn{
+
+  color: #D1484D;
+  background-color: rgba(64,20,22,0.8);
+  border-radius: 0;
+  padding: 0.75rem 2.25rem;
+}
+
+@media screen and (max-width: 600px) {
+    .module-hero{
+      height: 100%;
+      padding-left: 5%;
+      padding-right: 5%;
+    }
+    .buttons-two{
+      width: 100%;
+      margin-bottom: 5%;
+    }
+    .buttons-row{
+      margin-left: 0;
+    }
+    .module-hero img{
+      width: 100%;
+      height: auto;
+     
+    }
+  }
