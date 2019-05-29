@@ -57,8 +57,9 @@ display:block;
 }
 
 .hero-row{
-  z-index: -10;
+  display: inline-block;
 }
+
 .col-4p{
   width: 55px;
   float: left;
@@ -348,7 +349,6 @@ display:block;
   margin-bottom: 20px;
   vertical-align: top;
   display: inline-block;
-
 }
 .c-2{
   position: absolute;
