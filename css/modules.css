@@ -338,7 +338,7 @@ background-color: rgba(0,0,0,0);
 
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
-  body .col-4p .side-menu{
+  body .col-4p.side-menu{
     z-index: 400;
   }
   body .sticky{
