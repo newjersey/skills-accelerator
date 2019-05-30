@@ -22,12 +22,13 @@
     <link href="../css/bootstrap.css" rel="stylesheet">
     <link href="../css/modules.css" rel="stylesheet">
     <link href="../css/main.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
      <!--[if lte IE 9]><link rel="stylesheet" href="css/lte-ie-9.css"><![endif]-->
   </head>
 
   <body>
 <div class="mod-container">
-    <div class="hero-row">
+    
         <div id="mySidenav" class="sidenav">
             <a href="#">About the Innovation Skills Accelerator</a>
             <a href="#modules">View all modules</a>
@@ -56,8 +57,8 @@
         
       </div>
     </div>
-  
-    <div class="module-hero">
+
+    <div class="module-hero" id="main-module">
       <div class="center-text">
         <div class="all-text">
         <h5>MODULE 1</h5>
@@ -74,24 +75,46 @@
           <a class="buttons-two prev-btn" href="../index.html">
               BACK TO HOME
           </a>
-          <div class="buttons-two nxt-btn">
+          <a class="buttons-two nxt-btn" href="../index.html">
              NEXT MODULE
-          </div>
+          </a>
         </div>
     </div>
+<div class="button-overlap">
+  <div class="button-section-mod">
+      <a class="btn custom-button-mod module-1-btn" href="#modules">DOWNLOAD THE TRANSCRIPT</a>
   </div>
-
-  <div class="button-section">
-      <a class="btn custom-button module-1-btn" href="#modules">DOWNLOAD THE TRANSCRIPT</a>
+</div>
+  <div class="sticky">
+    <div class="quick-menu">
+        <a href="#main-module" id="label-1"><i class="material-icons">video_label</i></a>
+        <p>LECTURE VIDEO</p>
+    </div>
+    <div class="quick-menu">
+        <a href="#interview"> <i class="material-icons">person_pin</i></a>
+        <p>INTERVIEWS</p>
+    </div>
+    <div class="quick-menu">
+        <a href="#readings"> <i class="material-icons">bookmarks</i></a>
+        <p>READINGS</p>
+    </div>
+    <div class="quick-menu">
+        <a href="#videos"> <i class="material-icons">ondemand_video</i></a>
+        <p> MORE VIDEOS</p>
+    </div>
+    <div class="quick-menu">
+      <a href="#assessment">  <i class="material-icons">assessment</i></a>
+      <p>SELF ASSESSMENT</p>
+    </div>
   </div>
-
+<div class="page-body">
   <div>
-      <h3 class="interview-section">PRACTITIONER INTERVIEW</h3>
+      <h3 class="interview-section" id="interview">PRACTITIONER INTERVIEW</h3>
   </div>
 
   <div class="interview-row">
       <div class="col-2p">
-          <img src="../images/murphy.png">
+          <img src="../images/video-thumbnails/alex-benay_m1.png">
           <p></p>
       </div>
       <div class="col-2p right">
@@ -121,7 +144,7 @@
     </div>
 
     <div>
-        <h3 class="interviewee-section">READINGS AND OTHER RESOURCES</h3>
+        <h3 class="reading-section" id="readings">READINGS</h3>
     </div>
     <div class="reading-item">
       <div class="reading-header m1">
@@ -130,7 +153,7 @@
         <p style="font-weight: 200">Government Technology State & Local Articles - E.Republic</p>
         <p style="font-weight: 200">Government Technology, Sept. 2017</p>
       </div>
-      <div class="reading-annotation m1">
+      <div class="annotation m1">
         <p>This article offers brief but clear definitions of artificial intelligence and two of its subsets: machine learning and neural networks. 
           It then illustrates these concepts with real world examples of how the technologies can and are being used today. As the title implies, the article focuses on the 
           tools' applications in the public sector, complete with an infographic that highlights 26 different ways in which they can be used in this capacity.</p>
@@ -145,13 +168,128 @@
             <p style="font-weight: 200">Medium</p>
             <p style="font-weight: 200">The Startup, 12 Nov. 2017</p>
           </div>
-          <div class="reading-annotation m1">
+          <div class="annotation m1">
             <p>This article serves as a briefing on how various industries can strategically utilize emerging technologies in and around the world today. 
               This is not an exhaustive list, but rather an introduction to the leading visions and practices across major industries. It defines technologies including blockchain, 
-              AI, Internet of Things, and virtual reality, and then comprehensively explains how they are influencing industries such as real estate, health care, transport, and more</p>
+              AI, Internet of Things, and virtual reality, and then comprehensively explains how they are influencing industries such as real estate, health care, transport, and more.</p>
             <p>Read the full article <a href="https://www.medium.com/swlh/how-emerging-technologies-are-impacting-industries-b85afc14b5d" target="_blank">here</a>.</p>
           </div>
     </div>
+
+    <div class="reading-item">
+      <div class="reading-header m1">
+          <h5>Top 10 Trends For Digital Transformation In 2017.</h5>
+          <p>Daniel Newman</p>
+          <p style="font-weight: 200">Forbes</p>
+          <p style="font-weight: 200">Forbes Magazine, 29 Nov. 2016</p>
+        </div>
+        <div class="annotation m1">
+          <p>This article is very effective in concisely defining new technologies, positing the value of said technologies, and explaining current trends already underway with 
+            these technologies in various industries. It serves as a way of getting caught up with modern trends, and understanding how they can be useful.</p>
+          <p>Read the full article <a href="www.forbes.com/sites/danielnewman/2016/08/30/top-10-trends-for-digital-transformation-in-2017/#f2dbbde47a5b" target="_blank">here</a>.</p>
+        </div>
+  </div>
+
+  <div class="reading-item">
+    <div class="reading-header m1">
+        <h5>Case Study: Registering Births on the Blockchain in Illinois.</h5>
+        <p>Andrew Young et al.</p>
+        <p style="font-weight: 200">Blockchan.ge</p>
+        <p style="font-weight: 200">The GovLab, Oct. 2018</p>
+      </div>
+      <div class="annotation m1">
+        <p>This case study is part of The GovLab’s Blockchange initiative, which explores whether and how blockchain technologies can be used for social change. 
+          This particular study examines the Illinois Blockchain Initiative, or more specifically one of its first pilot projects which involved the development of 
+          a digital birth registration process powered by blockchain. The study offers a significant value proposition for blockchain in the public sector, supported by 
+          the real world example of its use in this particular project.</p>
+        <p>Read the full article <a href="https://www.blockchan.ge/blockchange-birth-registration.pdfd" target="_blank">here</a>.</p>
+      </div>
+</div>
+
+<div class="reading-item last">
+  <div class="reading-header m1">
+      <h5>Introduction: Collective Intelligence as a Grand Challenge.</h5>
+      <p>Geoff Mulgan</p>
+      <p style="font-weight: 200">Big Mind: How Collective Intelligence Can Change Our World</p>
+      <p style="font-weight: 200">Princeton University Press, 2017, pp. 1–7</p>
+    </div>
+    <div class="annotation m1">
+      <p>This reading is the first chapter of Nesta Chief Executive Geoff Mulgan’s book, Big Mind: How Collective Intelligence Can Change Our World, in which he “describes 
+        the emerging field of collective intelligence that’s been prompted by a wave of digital technologies that make it possible for organisations and societies to think at large scale.”
+         This particular chapter is the introduction, where he provides a broad overview of the concept, touching upon how it can be leveraged effectively, how it can be used in democracy, 
+         how technology is enhancing it, and more.</p>
+      <p>Read the full article <a href="https://www.assets.press.princeton.edu/chapters/i11098.pdf" target="_blank">here</a>.</p>
+    </div>
+</div>
+<a id="videos"></a>
+<div>
+    <h3 class="video-section">VIDEOS</h3>
+</div>
+
+<div class="video-item">
+    <div class="video-header m1">
+        <div class="col-2p thumb">
+            <img src="../images/video-thumbnails/mulgan_m1.png">
+        </div>
+        <div class="col-2p text">
+            <h5>Big Mind - How Collective Intelligence Can Change Our World.</h5>
+            <p>Geoff Mulgan</p>
+            <p style="font-weight: 200">Vimeo</p>
+            <p style="font-weight: 200">Nesta UK, 7 Dec. 2017</p>
+        </div>
+       
+      </div>
+      <div class="annotation m1">
+        <p>This is a video of Geoff Mulgan discussing his aforementioned book, the introduction of which we included as a reading in this module. This video serves a similar 
+          purpose as he is essentially presenting the idea of collective intelligence to the audience but, as it is fairly long, he obviously goes into much more depth using ideas 
+          and examples extracted from the book.</p>
+        <p>Watch the full video <a href="https://www.vimeo.com/246260168" target="_blank">here</a>.</p>
+      </div>
+</div>
+
+<div class="video-item">
+    <div class="video-header m1">
+        <div class="col-2p thumb">
+            <img src="../images/video-thumbnails/GTC_m1.png">
+        </div>
+        <div class="col-2p text">
+            <h5>10 Emerging Technologies That Will Impact Our Lives in 2019.</h5>
+            <p>Global Tech Council</p>
+            <p style="font-weight: 200">Youtube</p>
+            <p style="font-weight: 200">Global Tech Council, 30 Dec. 2018</p>
+        </div>
+       
+      </div>
+      <div class="annotation m1">
+        <p>This is a very quick look at impactful emerging technologies that, at the end of 2018, the video’s producers predicted would disrupt 2019. From artificial intelligence 
+          to blockchain, the video quickly defines each technology and suggests the impact(s) that it will have on different industries. It is a great intro to new technologies that 
+          are finding their place in the public sector, even if that was not their impetus.</p>
+        <p>Watch the full video <a href="www.youtube.com/watch?v=hUsDdbqr0c8" target="_blank">here</a>.</p>
+      </div>
+</div>
+
+<div class="video-item last">
+    <div class="video-header m1">
+        <div class="col-2p thumb">
+            <img src="../images/video-thumbnails/csps_m1.png">
+        </div>
+        <div class="col-2p text">
+            <h5>Transforming the Way We Work: ISED's Story.</h5>
+            <p>CSPS Digital Academy</p>
+            <p style="font-weight: 200">Youtube</p>
+            <p style="font-weight: 200">CSPS Digital Academy, 8 Feb. 2019</p>
+        </div>
+       
+      </div>
+      <div class="annotation m1">
+        <p>In 2018, the Government of Canada’s CSPS Digital Academy launched Busrides, ongoing experiment in user engagement and online learning for public servants across Canada. 
+          The idea is to create quick lessons on innovative technologies and practices that public officials can read/watch on their way to work in the morning. This particular video 
+          features a conversation with Chahine El Chaar, Director of Modernization, Innovation and Delivery, who shares how his department, Innovation Science and Economic Development (ISED), 
+          brought in a digital office to change how employees work, to modernize the workplace and to increase efficiency.</p>
+        <p>Watch the full video <a href="www.youtube.com/watch?v=RpdXnbuVMgQ" target="_blank">here</a>.</p>
+      </div>
+    </div>
+</div>
 
     <footer class="footer nj">
         <div class="container-fluid">
@@ -171,7 +309,7 @@
       
               <p style="margin-left:auto; margin-right:auto; color: #7c8087; font-weight: 200">Made with <span style="color:#b80f0a">&hearts;</span> by the Office of Innovation</p>
               </div>
-          </div>
+            </div>
         
       </footer>
   </div>
@@ -183,15 +321,77 @@
        element.classList.toggle("show-nav");
     }
 </script>
+<script>
+    
+    var sticky = document.querySelector('.sticky');
+    var page = document.querySelector('.page-body');
+    var padding = document.querySelector('.interview-section');
+    var els = document.querySelectorAll('.quick-menu')
+    var menu = document.querySelector('.quick-menu');
+    var origOffsetY = sticky.offsetTop;
+ 
+    function onScroll(e) {
+      for (var i = 0; i < els.length; i++) {
+      if (window.scrollY >= origOffsetY-50) {
+        sticky.classList.replace('sticky','fixed');
+        els[i].classList.replace('quick-menu','vertical');
+        
+      }
+      else 
+      {
+        sticky.classList.replace('fixed','sticky');
+        els[i].classList.replace('vertical','quick-menu');
+       
+        
+      }
+      }
+      if (window.scrollY >= origOffsetY-50) {
+        page.classList.replace('page-body','page-body-rep');
+        padding.classList.add('padding');
+      }
+      else 
+      {
+        page.classList.replace('page-body-rep','page-body');
+        padding.classList.remove('padding');
+      }  
+                                      
+    }
+    document.addEventListener('scroll', onScroll);
+    </script>
   
+  <script>
+    
+        // Add smooth scrolling to all links
+        $("a").on('click', function(event) {
+      
+          // Make sure this.hash has a value before overriding default behavior
+          if (this.hash !== "") {
+            // Prevent default anchor click behavior
+            event.preventDefault();
+      
+            // Store hash
+            var hash = this.hash;
+      
+            // Using jQuery's animate() method to add smooth page scroll
+            // The optional number (800) specifies the number of milliseconds it takes to scroll to the specified area
+            $('html, body').animate({
+              scrollTop: $(hash).offset().top
+            }, 800, function(){
+         
+              // Add hash (#) to URL when done scrolling (default click behavior)
+              window.location.hash = hash;
+            });
+          } // End if
+        });
 
+      </script>
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="js/jquery-3.2.1.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="js/popper.min.js"></script>
     <script src="js/bootstrap-4.0.0.js"></script>
     <script src="js/main.js"></script>
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"></script>
 <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.6/umd/popper.min.js"></script>
 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.2.1/js/bootstrap.min.js"></script>
