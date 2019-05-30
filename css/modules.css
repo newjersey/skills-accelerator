@@ -4,6 +4,7 @@
 .page-body-rep{
   margin-right: 6%;
 }
+
 .mod-container{
   overflow: hidden;
 }
@@ -292,7 +293,6 @@ background-color: rgba(0,0,0,0);
 }
 .sticky {
   width: 100%;
-
   background-color: rgba(36,36,36,1);
   padding-top: 40px;
   padding-bottom: 20px;
@@ -337,36 +337,39 @@ background-color: rgba(0,0,0,0);
 .material-icons.md-light { color: #D1484D; }
 
 
-@media screen and (max-width: 600px) {
-  .sticky{
+@media screen and (min-width: 320px) and (max-width: 600px) {
+ 
+  body .sticky{
     width: 100%;
     font-size: 0.6rem;
     font-weight: 400;
   }
-  .quick-menu{
+  body .quick-menu{
     font-size: 0.6rem;
     font-weight: 400;
   }
-  .fixed{
+  body .fixed{
+    z-index: 100;
     top:0;
-    width: 100%;
+    width: 85%;
     height: auto;
     padding-top: 10px;
     padding-bottom: 10px;
-    padding-left: 55px;
     padding-right: 10px;
   }
-  .vertical{
+  body .vertical{
     height: auto;
     width: 20%;
     float: left;
     padding-top: 10px;
   }
-  .vertical p{
+  body .vertical p{
     font-size: 0.5rem;
     font-weight: 400;
   }
-  .page-body-rep{
+ 
+  
+  body .page-body-rep{
     margin-right:0;
   }
 
@@ -424,36 +427,35 @@ background-color: rgba(0,0,0,0);
     }
   }
   
-  @media screen and (max-width: 800px) {
-    .sticky{
+  @media screen and  (min-width: 601px) and (max-width: 800px) {
+    body .sticky{
       width: 100%;
       font-size: 0.6rem;
       font-weight: 400;
     }
-    .quick-menu{
+    body .quick-menu{
       font-size: 0.6rem;
       font-weight: 400;
     }
-    .fixed{
-      top:0;
+    body .fixed{
+      z-index: 100;
       width: 100%;
       height: auto;
       padding-top: 10px;
       padding-bottom: 10px;
-      padding-left: 55px;
       padding-right: 10px;
     }
-    .vertical{
+    body .vertical{
       height: auto;
       width: 20%;
       float: left;
       padding-top: 10px;
     }
-    .vertical p{
+    body .vertical p{
       font-size: 0.5rem;
       font-weight: 400;
     }
-    .page-body-rep{
+    body .page-body-rep{
       margin-right:0;
     }
   
