@@ -9,7 +9,7 @@
   margin-right: 0;
 }
 .page-body-rep{
-  margin-right: 6%;
+  margin-right: 10%;
 }
 
 .mod-container{
@@ -291,7 +291,7 @@ background-color: rgba(0,0,0,0);
   position: fixed;
   top: 50px;
   right: 0px;
-  width: 6%;
+  width: 10%;
   background-color: rgba(36,36,36,1);
   text-align: center;
   height: 100%;
@@ -302,7 +302,7 @@ background-color: rgba(0,0,0,0);
   position: fixed;
   top: 50px;
   right: 0px;
-  width: 6%;
+  width: 10%;
   background-color: rgba(36,36,36,1);
   text-align: center;
   height: 100%;
@@ -456,7 +456,7 @@ background-color: rgba(0,0,0,0);
   }
   body .vertical-6{
     height: auto;
-    width: 16.67%;
+    width: 16%;
     float: left;
     padding-top: 10px;
   }
@@ -612,13 +612,14 @@ background-color: rgba(0,0,0,0);
   }
 
 
-  @media screen and (max-width: 1200px){
+  @media screen and (min-width: 801px) and (max-width: 800px){
     .interview-row .col-2p img{
       width: 90%;
       margin-right: 30px;
       padding-right:0;
       margin-left: 20px;
     }
+
     .right{
       padding-right:0px;
     }
