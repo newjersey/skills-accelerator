@@ -1,3 +1,10 @@
+.hide{
+  display: none;
+}
+
+.show{
+  display: block;
+}
 .page-body{
   margin-right: 0;
 }
@@ -291,6 +298,17 @@ background-color: rgba(0,0,0,0);
   padding-top: 10%;
   padding-bottom: 10%;
 }
+.fixed-6 {
+  position: fixed;
+  top: 50px;
+  right: 0px;
+  width: 6%;
+  background-color: rgba(36,36,36,1);
+  text-align: center;
+  height: 100%;
+  padding-top: 10%;
+  padding-bottom: 10%;
+}
 .sticky {
   width: 100%;
   background-color: rgba(36,36,36,1);
@@ -298,6 +316,17 @@ background-color: rgba(0,0,0,0);
   padding-bottom: 20px;
 }
 .sticky:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+.sticky-6 {
+  width: 100%;
+  background-color: rgba(36,36,36,1);
+  padding-top: 40px;
+  padding-bottom: 20px;
+}
+.sticky-6:after {
   content: "";
   display: table;
   clear: both;
@@ -318,6 +347,22 @@ background-color: rgba(0,0,0,0);
 .quick-menu a{
   color: #D1484D;
 }
+.quick-menu-6{
+  margin-left: auto;
+  margin-right: auto;
+  width: 20%;
+  float: left;
+  height: auto;
+  padding-top: 10px;
+  text-align: center;
+  font-weight: 200;
+  font-size: 0.8rem;
+  color: #ffffff;
+}
+.quick-menu-6 a{
+  color: #D1484D;
+}
+
 .vertical{
   margin-left: auto;
   margin-right: auto;
@@ -334,6 +379,21 @@ background-color: rgba(0,0,0,0);
   color: #D1484D;
 }
 
+.vertical-6{
+  margin-left: auto;
+  margin-right: auto;
+  height: 20%;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+.vertical-6 p{
+  font-size: 0.6rem;
+  font-weight: 400;
+  color: #ffffff;
+}
+.vertical-6 a{
+  color: #D1484D;
+}
 .material-icons.md-light { color: #D1484D; }
 
 
@@ -341,7 +401,16 @@ background-color: rgba(0,0,0,0);
   body .col-4p.side-menu{
     z-index: 400;
   }
+  body .col-4p{
+    background-color: rgba(0,0,0,0);
+  }
+
   body .sticky{
+    width: 100%;
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
+  body .sticky-6{
     width: 100%;
     font-size: 0.6rem;
     font-weight: 400;
@@ -350,7 +419,12 @@ background-color: rgba(0,0,0,0);
     font-size: 0.6rem;
     font-weight: 400;
   }
+  body .quick-menu-6{
+    font-size: 0.6rem;
+    font-weight: 400;
+  }
   body .fixed{
+    display: none;
     z-index: 100;
     top:0;
     width: 100%;
@@ -360,6 +434,16 @@ background-color: rgba(0,0,0,0);
     padding-right: 10px;
     padding-left: 55px;
   }
+  body .fixed-6{
+    z-index: 400;
+    top:0;
+    width: 100%;
+    height: auto;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-right: 10px;
+
+  }
   body .vertical{
     height: auto;
     width: 20%;
@@ -367,6 +451,16 @@ background-color: rgba(0,0,0,0);
     padding-top: 10px;
   }
   body .vertical p{
+    font-size: 0.5rem;
+    font-weight: 400;
+  }
+  body .vertical-6{
+    height: auto;
+    width: 16.67%;
+    float: left;
+    padding-top: 10px;
+  }
+  body .vertical-6 p{
     font-size: 0.5rem;
     font-weight: 400;
   }

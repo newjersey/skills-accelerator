@@ -35,7 +35,7 @@
             <a href="#">Contact us</a>
             <a href="#">About the Office of Innovation</a>
           </div>
-    <div class="state-header">
+    <div class="state-header show">
         <span onclick="openNav()">
       <div class="col-4p side-menu" onclick="myFunction(this)">
           <div class="bar-1 bar-color-mod1"></div>
@@ -85,7 +85,7 @@
       <a class="btn custom-button-mod module-1-btn" href="#modules">DOWNLOAD THE TRANSCRIPT</a>
   </div>
 </div>
-  <div class="sticky">
+  <div class="sticky show">
     <div class="quick-menu">
         <a href="#main-module" id="label-1"><i class="material-icons">video_label</i></a>
         <p>LECTURE VIDEO</p>
@@ -103,6 +103,37 @@
         <p> MORE VIDEOS</p>
     </div>
     <div class="quick-menu">
+      <a href="#assessment">  <i class="material-icons">assessment</i></a>
+      <p>SELF ASSESSMENT</p>
+    </div>
+  </div>
+  <div class="sticky-6 hide">
+      <div class="quick-menu-6">
+          <span onclick="openNav()">
+              <div class="col-4p side-menu" onclick="myFunction(this)">
+                  <div class="bar-1 bar-color-mod1"></div>
+                  <div class="bar-2 bar-color-mod1"></div>
+                  <div class="bar-3 bar-color-mod1"></div>
+              </div>
+            </span>        
+      </div>
+    <div class="quick-menu-6">
+        <a href="#main-module" id="label-1"><i class="material-icons">video_label</i></a>
+        <p>LECTURE VIDEO</p>
+    </div>
+    <div class="quick-menu-6">
+        <a href="#interview"> <i class="material-icons">person_pin</i></a>
+        <p>INTERVIEWS</p>
+    </div>
+    <div class="quick-menu-6">
+        <a href="#readings"> <i class="material-icons">bookmarks</i></a>
+        <p>READINGS</p>
+    </div>
+    <div class="quick-menu-6">
+        <a href="#videos"> <i class="material-icons">ondemand_video</i></a>
+        <p> MORE VIDEOS</p>
+    </div>
+    <div class="quick-menu-6">
       <a href="#assessment">  <i class="material-icons">assessment</i></a>
       <p>SELF ASSESSMENT</p>
     </div>
@@ -325,40 +356,82 @@
     
     var sticky = document.querySelector('.sticky');
     var page = document.querySelector('.page-body');
+    var header = document.querySelector('.state-header');
     var padding = document.querySelector('.interview-section');
     var els = document.querySelectorAll('.quick-menu')
     var menu = document.querySelector('.quick-menu');
     var origOffsetY = sticky.offsetTop;
- 
+
+
     function onScroll(e) {
       for (var i = 0; i < els.length; i++) {
       if (window.scrollY >= origOffsetY-50) {
         sticky.classList.replace('sticky','fixed');
         els[i].classList.replace('quick-menu','vertical');
-        
       }
       else 
       {
         sticky.classList.replace('fixed','sticky');
         els[i].classList.replace('vertical','quick-menu');
-       
-        
+
       }
       }
       if (window.scrollY >= origOffsetY-50) {
         page.classList.replace('page-body','page-body-rep');
         padding.classList.add('padding');
+        
+     
       }
       else 
       {
         page.classList.replace('page-body-rep','page-body');
         padding.classList.remove('padding');
-      }  
-                                      
+        
+        
+      }                      
     }
     document.addEventListener('scroll', onScroll);
     </script>
   
+  <script>
+     var sticky = document.querySelector('.sticky');
+     var sticky_6 = document.querySelector('.sticky-6');
+     var els_6 = document.querySelectorAll('.quick-menu-6');
+     var origOffsetY_6 = sticky.offsetTop;
+     const mq = window.matchMedia("((min-width: 320px) and (max-width: 600px))");
+
+     function onScroll(e) {
+       if(mq.matches){
+      for (var i = 0; i < els_6.length; i++) {
+      if (window.scrollY >= (origOffsetY_6)-50) {
+        sticky_6.classList.replace('sticky-6','fixed-6');
+        sticky.classList.replace('show','hide');
+        els_6[i].classList.replace('quick-menu-6','vertical-6');
+      }
+      else 
+      {
+        sticky_6.classList.replace('fixed-6','sticky-6');
+        sticky.classList.replace('hide','show');
+        els_6[i].classList.replace('vertical-6','quick-menu-6');
+
+      }
+      }
+     
+      if (window.scrollY >= (origOffsetY_6)-50) {
+        sticky_6.classList.replace('hide','show');
+        padding.classList.remove('padding');
+        header.classList.replace('hide','show');
+      }
+      else 
+      {
+        sticky_6.classList.replace('show','hide');
+        padding.classList.remove('padding');
+        header.classList.replace('hide','show');
+      }  
+    }
+     }     
+  document.addEventListener('scroll', onScroll);   
+  </script>
   <script>
     
         // Add smooth scrolling to all links
