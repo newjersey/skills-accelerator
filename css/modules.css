@@ -300,6 +300,7 @@ background-color: rgba(0,0,0,0);
 }
 .fixed-6 {
   position: fixed;
+  z-index: 1000;
   top: 50px;
   right: 0px;
   width: 10%;
@@ -380,6 +381,7 @@ background-color: rgba(0,0,0,0);
 }
 
 .vertical-6{
+  z-index: 1000;
   margin-left: auto;
   margin-right: auto;
   height: 20%;
