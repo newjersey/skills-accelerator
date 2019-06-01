@@ -121,14 +121,9 @@
   color: #ffffff;
   font-weight: 200;
 }
-#videos{
-  display: block;
-    position: relative;
-    
-    visibility: hidden;
-  }
+
 .padding{
-  margin-top: 20px;
+  padding-top: 40px;
 }
 .interviewee-section{
   margin-bottom: 20px;
@@ -219,6 +214,58 @@
   margin-left: 40px;
   margin-right: 40px;
   
+}
+.questions{
+  border: 2px solid rgba(64,20,22,0.8);
+  height: auto;
+  margin-top: 40px;
+
+}
+
+.assessment-row{
+    width: 100%;
+    padding-left: 25px;
+    padding-right: 25px;
+    text-align:left;
+    height: auto;
+    margin-bottom: 40px;
+  }
+
+  
+  .assessment-row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  .col-2ques {
+    width: 100%;
+    height: auto;
+    float: left;
+    text-align: left;
+    padding-top: 10px;
+
+  }
+  .col-2ques p{
+padding-left: 30px;
+padding-top : 20px
+
+  }
+.options{
+  color: rgba(64,20,22,0.8);
+}
+.r_button{
+  border-color:#D1484D;
+}
+.submit_button{
+  background-color: rgba(209,72,77,0.2);
+  color: rgba(64,20,22,0.8);
+  border: 0px;
+  padding:10px 20px;
+}
+
+.answer {
+  font-weight: 400;
+  color: rgba(64,20,22,1);
 }
 .video-item{
   border: 2px solid rgba(64,20,22,0.8);
@@ -514,6 +561,19 @@ background-color: rgba(0,0,0,0);
       width: 100%;
       margin-bottom: 5%;
     }
+    .col-2ques{
+      width: 100%;
+   
+      text-align: left;
+    }
+    .col-2ques p{
+      padding-left: 0px;
+    }
+    .questions-form{
+      padding-left: 20px;
+      
+    }
+
     .buttons-row{
       margin-left: 0;
     }
