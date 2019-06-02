@@ -36,7 +36,13 @@
   color: #D1484D;
   opacity: 0.8;
   font-weight: 200;
-  padding-bottom: 40px;
+  padding-bottom: 0px;
+}
+.module-hero .center-text ol{
+  color: #D1484D;
+  opacity: 0.8;
+  font-weight: 200;
+  padding-bottom: 0px;
 }
 .module-hero:after {
   content: "";
@@ -154,6 +160,10 @@
   color: #ffffff;
   font-weight: 200;
 }
+h3.video-section.assess {
+margin-bottom: 0px;
+}
+
 .interview-row{
   width: 100%;
   padding: 25px;
@@ -168,13 +178,13 @@
 }
 
 .interview-row h3{
-  text-align: left;
+  text-align: center;
   margin-top: 40px;
   color: #D1484D;
   font-weight: 200;
 }
 .interview-row p{
-  text-align: left;
+  text-align: center;
   font-weight: 200;
 }
 .interview-row .col-2p {
@@ -205,21 +215,28 @@
 .expert p{
   font-weight: 200;
   text-align: center;
+  margin-left: 20px;
+  margin-right: 20px;
 }
 
 .reading-item{
   border: 2px solid rgba(64,20,22,0.8);
   height: auto;
   margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
   
 }
 .questions{
-  border: 2px solid rgba(64,20,22,0.8);
+  border-bottom: 2px solid rgba(209,72,77,0.8);
   height: auto;
   margin-top: 40px;
-
+  width: 100%;
+}
+.questions h3{
+  color: #D1484D;
+  font-weight: 200;
+  padding-left: 30px;
 }
 
 .assessment-row{
@@ -228,7 +245,7 @@
     padding-right: 25px;
     text-align:left;
     height: auto;
-    margin-bottom: 40px;
+    background-color: rgba(209,72,77,0.2);
   }
 
   
@@ -247,9 +264,8 @@
   }
   .col-2ques p{
 padding-left: 30px;
-padding-top : 20px
-
   }
+
 .options{
   color: rgba(64,20,22,0.8);
 }
@@ -271,8 +287,8 @@ padding-top : 20px
   border: 2px solid rgba(64,20,22,0.8);
   height: auto;
   margin-top: 40px;
-  margin-left: 40px;
-  margin-right: 40px;
+  margin-left: 10px;
+  margin-right: 10px;
   
 }
 
@@ -463,6 +479,14 @@ background-color: rgba(0,0,0,0);
 
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
+  .expert p{
+    font-weight: 200;
+    text-align: left;
+  }
+  .questions h3{
+  text-align: left;
+  padding-left: 0px;
+  }
   body .col-4p.side-menu{
     z-index: 400;
   }
@@ -470,6 +494,12 @@ background-color: rgba(0,0,0,0);
     background-color: rgba(0,0,0,0);
   }
 
+  .center-text p{
+    text-align: left;
+  }
+  .center-text ol{
+    text-align: left;
+  }
   body .sticky{
     width: 100%;
     font-size: 0.6rem;
@@ -590,10 +620,10 @@ background-color: rgba(0,0,0,0);
       width: 100%;
     }
     .interview-row p{
-      text-align: center;
+      text-align: left;
     }
     .interview-row h3{
-      text-align: center;
+      text-align: left;
       margin-top: 20px;
     }
     .expert{
