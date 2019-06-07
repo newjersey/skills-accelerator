@@ -26,7 +26,14 @@
 .show-nav{
 display:block;
 }
-
+.guv-video{
+  padding-top: 40px;
+  text-align: center;
+}
+.guv-video iframe{
+  width: 70%;
+  height: 300px;
+}
 .sidenav a:hover {
   color: #f1f1f1;
 }
@@ -103,6 +110,13 @@ display:block;
   float: left;
   height: 100%;
   padding-left: 20px;
+  padding-top: 14px;
+}
+.col-48 a{
+  font-weight: 300;
+  font-size: 9pt;
+  padding-top: 16px;
+  text-decoration: none;
 }
 .modules{
   width: 80%;
@@ -213,6 +227,8 @@ display:block;
 }
 .mod-2:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  text-decoration: none;
+  color: #D148BC;
 }
 .mod-2 img{
   width: 24%;
@@ -342,6 +358,14 @@ display:block;
   margin-right: auto;
 }
 
+.col-2p video{
+  width: 80%;
+  height: auto;
+  margin-top: 40px;
+  margin-bottom: 20px;
+  vertical-align: top;
+  display: inline-block;
+}
 .col-2p img{
   width: 80%;
   height: auto;
