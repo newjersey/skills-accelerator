@@ -344,10 +344,31 @@ display:block;
   display: inline-block;
 }
 .separator{
+
   text-align: center;
   background-color: #222222;
   padding: 20px;
   color: #ffffff;
+  font-weight: 200;
+}
+.about-insa{
+  padding-top: 100px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #222222;
+  color: #ffffff;
+  font-weight: 200;
+}
+.about-inno{
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+  background-color: #222222;
+  color: #ffffff;
+  font-weight: 200;
+}
+.about-text{
+  padding: 2% 10%;
   font-weight: 200;
 }
 .col-2p {
