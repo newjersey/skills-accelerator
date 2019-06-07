@@ -1,6 +1,10 @@
 .body-container{
   overflow: hidden;
 }
+.hide{
+  display: none;
+}
+
 .sidenav {
   height: 100%;
   width: 400px;
@@ -343,6 +347,8 @@ display:block;
   padding-bottom: 40px;
   display: inline-block;
 }
+
+
 .separator{
 
   text-align: center;
@@ -400,6 +406,7 @@ display:block;
   right: 55px;
   color: #ffffff;
   text-align: right;
+  padding-top:0;
 }
 .col-48 p{
   font-weight: 300;
@@ -503,7 +510,8 @@ display:block;
     width: 100%;
   }
   .col-20{
-    width: 100%;
+    width: 100%; 
+    height: 260px;
   }
   .col-48 {
     display: none;

@@ -44,13 +44,15 @@ for (var i = 0; i <= buttonsCount; i += 1) {
   }
   };
 }
-function printChecked(id){
+function printChecked(id, req_corr){
  
+  var flag = 0;
   var index = id-1;
   var selectedItems=0;
   var total_items = 0;
   var items=document.getElementsByName('questions-all-correct');
   var items_id = id;
+
   for(var i=0; i<items.length; i++){
   
     
@@ -71,11 +73,19 @@ function printChecked(id){
     else
     {
     if(items[i].type=='checkbox' && items[i].checked==true)
-      selectedItems+=1;
+    {
+      
+      if (items[i].value=="correct")
+      {
+        selectedItems+=1;
+      }
+      else
+      flag = 1;
+    }
     }
   }
  
-  if(selectedItems == total_items){
+  if((selectedItems == req_corr) && flag == 0){
     answer_wrong[index].classList.replace('show','hide');
     answer_correct[index].classList.replace('hide','show');
     
