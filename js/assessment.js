@@ -21,7 +21,6 @@ var buttonsCount = submit_index.length;
 var index = 0;
 var items=document.getElementsByName('questions-all-correct');
 var selectedItems=0;
-var buttons = document.getElementsByName("getVal");
 var buttonsCount = buttons.length;
 
 for (var i = 0; i <= buttonsCount; i += 1) {
@@ -52,29 +51,35 @@ function printChecked(id, req_corr){
   var total_items = 0;
   var items=document.getElementsByName('questions-all-correct');
   var items_id = id;
+  id = parseInt(id);
+
 
   for(var i=0; i<items.length; i++){
   
-    
     if(items[i].id > id)
     {
+
     break;
     }
-    total_items+=1;
-    if(items_id != items[i].id)
+    
+    else if(items[i].id < id)
     {
+      continue;
+     /*  total_items=0;
       if(items[i].type=='checkbox' && items[i].checked==true)
       selectedItems = 1;
       else if(items[i].type=='checkbox' && items[i].checked==false)
+      {
       selectedItems = 0;
-      total_items = 1;
+      total_items = 0;
       items_id = items[i].id;
+      }*/
     }
-    else
+    else if(id==items[i].id)
     {
+      total_items+=1;
     if(items[i].type=='checkbox' && items[i].checked==true)
     {
-      
       if (items[i].value=="correct")
       {
         selectedItems+=1;
@@ -83,6 +88,7 @@ function printChecked(id, req_corr){
       flag = 1;
     }
     }
+    
   }
  
   if((selectedItems == req_corr) && flag == 0){
@@ -99,15 +105,7 @@ function printChecked(id, req_corr){
     }
   
   
-}			
-
-
-    
-  
- 
-  
-    
-    
+}		
 
 
 // disable submission of all forms on this page
