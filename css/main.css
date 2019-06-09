@@ -27,7 +27,7 @@ input[type=text]{
   box-sizing: border-box;
 }
 ::placeholder {
-  color: #d5d5d5;
+  color: rgba(166, 209, 72, 0.541);
   font-weight: 200;
 }
 
@@ -530,6 +530,13 @@ font-size: 4rem;
   .state-header{
     width: 100%;
     background-color: rgba(54,54,54,0.2);
+  }
+  input[type=text]{
+    width: 100%;
+    text-align:center;
+  }
+  button{
+  width:100%;
   }
   .mb-5{
     margin-bottom: 0;
