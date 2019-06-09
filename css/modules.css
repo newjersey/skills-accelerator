@@ -116,10 +116,10 @@
   width: 70%;
   height: auto;
 }
-.module-hero.m1 video{
+.module-hero.m1 iframe{
   border: 5px solid rgba(209,72,77,1);
 }
-.module-hero.m2 video{
+.module-hero.m2 iframe{
   border: 5px solid #D148BC;
 }
 
