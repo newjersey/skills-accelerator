@@ -136,7 +136,7 @@ display:block;
 }
 .col-20 {
   width: 20%;
-  height: 240px;
+  height: 210px;
   float: left;
   margin-bottom: 40px;
   transition: transform .2s;
@@ -163,14 +163,16 @@ display:block;
   padding-top: 10px;
 }
 
+
 .expert-list p .name{
-  color:rgba(0,66,0,0.6);
   font-size: 18px;
   font-weight: 400;
+  background-color: rgba(0,0,0,0);
 }
 
 .expert-list p .title{
-  color:rgba(165,209,72,1);
+  background-color: rgba(0,0,0,0);
+  opacity: 0.5;
   font-size: 14px;
   font-weight: 400;
 }
@@ -204,23 +206,28 @@ display:block;
   margin-left: auto;
   margin-right: auto;
 }
+
 #expert-image{
+  border-width: 3px;
+  border-style: solid;
   height: 150px;
-  border: 3px solid rgba(165,209,72,1);
   border-radius: 100px;
 }
-
+.fa, .fas, .far {
+font-size: 4rem;
+}
 .mod-1{
   background-color: rgba(209,72,77,0.24);
   color: #D1484D;
+  border-color:#D1484D;
 }
 .mod-1:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
   text-decoration: none;
   color: #D1484D;
 }
-.mod-1 img{
-  width: 25%;
+.mod-1 i{
+
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
@@ -234,21 +241,21 @@ display:block;
   text-decoration: none;
   color: #D148BC;
 }
-.mod-2 img{
-  width: 24%;
+.mod-2 i{
+
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-3{
-  background-color: rgba(177,72,209,0.24);
-  color:#B148D1;
+  background-color: rgba(98,209,72,0.24);
+  color: rgba(0,66,0,0.7);
 }
 .mod-3:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-3 img{
-  width: 35%;
+.mod-3 i{
+ 
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
@@ -260,10 +267,10 @@ display:block;
 .mod-4:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-4 img{
-  width: 35%;
+.mod-4 i{
+ 
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-5{
@@ -273,24 +280,22 @@ display:block;
 .mod-5:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-5 img{
-  width: 35%;
+.mod-5 i{
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
 }
 .mod-6{
   background-color: rgba(72,209,209,0.24);
-  color: #48D1D1;
+  color: rgb(27, 109, 109);
 }
 
 .mod-6:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-6 img{
-  width: 20%;
+.mod-6 i{
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-7{
@@ -300,23 +305,21 @@ display:block;
 .mod-7:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-7 img{
-  width: 35%;
+.mod-7 i{
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
 }
 .mod-8{
-  background-color: rgba(98,209,72,0.24);
-  color: rgba(0,66,0,0.7);
+  background-color: rgba(100, 22, 163, 0.24);
+  color:#B148D1;
 }
 .mod-8:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-8 img{
-  width: 55%;
+.mod-8 i{
   height: auto;
-  padding-bottom: 35px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-9{
@@ -326,25 +329,22 @@ display:block;
 .mod-9:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-9 img{
-  width: 20%;
+.mod-9 i{
   height: auto;
-  padding-bottom: 15px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 .mod-10{
-  background-color: rgba(209,109,72,0.24);
+  background-color: rgba(201, 142, 15, 0.24);
   color: #D16D48;
 }
 
 .mod-10:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
-.mod-10 img{
-  width: 60%;
+.mod-10 i{
   height: auto;
-  padding-top: 20px;
-  padding-bottom: 40px;
+  padding-bottom: 25px;
   display: inline-block;
 }
 
@@ -458,7 +458,7 @@ display:block;
   text-align: center;
 }
 .all-text{
-  padding-top: 150px;
+  padding-top: 200px;
 }
 
 .center-text h1{
@@ -511,7 +511,7 @@ display:block;
   }
   body .col-20{
     width: 100%; 
-    height: 260px;
+    height: 210px;
   }
   .col-48 {
     display: none;
@@ -546,13 +546,7 @@ display:block;
   }
   body .col-20{
     width: 100%; 
-    height: 300px;
-  }
-
-  .col-20 img{
-    width: 15%;
-    margin-top: auto;
-    margin-bottom: auto;
+    height: 230px;
   }
  
 }
@@ -569,8 +563,10 @@ display:block;
        display: none;   
     }
    body .col-20{
-     width: 100%;
-      height: 280px;
+      height: 220px;
+    }
+    .fa, .fas, .far{
+      font-size: 3rem;
     }
 }
 
