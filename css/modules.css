@@ -304,17 +304,17 @@ margin-bottom: 1rem;
   float: right;
   margin-right: 60px;
   height: 300px;
-  width: 80%;
+  width: 85%;
 }
-.interview-row .col-2p img.m1{
+.interview-row .col-2p iframe.m1{
   border: 4px solid #D1484D;
 }
-.interview-row .col-2p img.m2{
+.interview-row .col-2p iframe.m2{
   border: 4px solid #D148BC;
 }
 
 .right{
-  padding-right:200px;
+  padding-right:0px;
 }
 .int-btn{
   width: auto;
