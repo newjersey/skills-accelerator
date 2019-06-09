@@ -76,34 +76,25 @@
   <div class="intro-videos">
     <div class="col-2p">
         <div class="guv-video">
-          <!--  <video class="bsn show" id="bsn" controls poster="images/murphy.png">
-              <source src="videos/gov-intro.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>-->
-          <iframe class="" id="ytplayer" type="text/html"
-          src="https://www.youtube.com/embed/sZJ12LlvUBU?loop=1&modestbranding=1"
+     
+        
+            <iframe type="text/html"
+          src="https://www.youtube.com/embed/sZJ12LlvUBU?rel=0"
           frameborder="0" allowfullscreen></iframe>
-        </div>
-        <!--
-        <video controls poster="images/murphy.png">
-          <source src="videos/gov-intro.mp4" type="video/mp4">
-          Your browser does not support the video tag.
-        </video>
-        -->
+       
+      
+      </div>
+
         <p>A MESSAGE FROM GOVERNOR PHIL MURPHY</p>
     </div>
     <div class="col-2p">
        
 
         <div class="guv-video">
-          <!--
-            <video class="bsn show" controls poster="images/murphy.png">
-              <source src="videos/gov-intro.mp4" type="video/mp4">
-              Your browser does not support the video tag.
-            </video>
-            -->
-            <iframe class="" id="bsn-video" type="text/html"
-            src="https://www.youtube.com/embed/cZscl8f1kc8?loop=1&modestbranding=1"
+          
+           
+            <iframe type="text/html"
+            src="https://www.youtube.com/embed/cZscl8f1kc8?rel=0"
             frameborder="0" allowfullscreen></iframe>
           </div>
         <p>WHAT IS THE INNOVATION SKILLS ACCELERATOR?</p>
@@ -128,7 +119,7 @@
    
     <div class="col-20 mod-3">
       
-        <p>MODULE 3 (COMING SOON)</p>
+        <p>MODULE 3</br>(COMING SOON)</p>
         <img src="images/icons/problem-def.png">
         <p>INTRODUCTION TO</br>PROBLEM DEFINITION</p>
       
@@ -226,10 +217,13 @@
     <script src="js/bootstrap-4.0.0.js"></script>
     <script src="js/main.js"></script>
 <script>
+  var vid_thumb = document.querySelector('.bsn');
+  var vid = document.querySelector('.real-bsn');
 $(document).ready(function() {
     $('#bsn').on('click', function(ev) {
-   
       $("#bsn-video")[0].src += "&autoplay=1";
+      vid_thumb.classList.replace('show','hide');
+      vid.classList.replace('hide','show');
       ev.preventDefault();
    
     });

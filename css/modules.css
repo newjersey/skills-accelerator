@@ -712,7 +712,11 @@ background-color: rgba(0,0,0,0);
   body .col-4p{
     background-color: rgba(0,0,0,0);
   }
-
+  .interview-row .col-2p a{
+    text-align: left;
+    font-size: 0.72rem;
+    
+    }
   .center-text p{
     text-align: left;
   }
