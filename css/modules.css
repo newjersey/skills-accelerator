@@ -274,7 +274,7 @@ margin-bottom: 1rem;
 }
 .interview-row h3{
   text-align: center;
-  margin-top: 40px;
+  margin-top: 20px;
   font-weight: 200;
 }
 .interview-row h3.m1{
@@ -294,10 +294,11 @@ margin-bottom: 1rem;
  
   background-color: rgba(0,0,0,0);
 }
-.interview-row .col-2p img{
+.interview-row .col-2p iframe{
   float: right;
   margin-right: 60px;
-  width: 75%;
+  height: 300px;
+  width: 80%;
 }
 .interview-row .col-2p img.m1{
   border: 4px solid #D1484D;
@@ -943,7 +944,7 @@ background-color: rgba(0,0,0,0);
   }
 
 
-  @media screen and (min-width: 801px) and (max-width: 800px){
+  @media screen and (min-width: 801px) and (max-width: 1200px){
     .interview-row .col-2p img{
       width: 90%;
       margin-right: 30px;
