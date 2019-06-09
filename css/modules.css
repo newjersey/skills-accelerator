@@ -1,6 +1,9 @@
 .hide{
   display: none;
 }
+label{
+  display: block;
+}
 
 .isDisabled {
   color: currentColor;
