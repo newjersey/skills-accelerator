@@ -5,6 +5,32 @@
   display: none;
 }
 
+button{
+  background-color: #A5D148;
+  border: none;
+  color: rgb(33, 37, 41);
+  padding: 10px 25px;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+}
+
+input[type=text]{
+  width: 38%;
+  padding: 10px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: none;
+  color: #ffffff;
+  background-color:rgba(166, 209, 72, 0.301);
+  border-radius: 0px;
+  box-sizing: border-box;
+}
+::placeholder {
+  color: #d5d5d5;
+  font-weight: 200;
+}
+
 .sidenav {
   height: 100%;
   width: 400px;
