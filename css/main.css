@@ -212,6 +212,11 @@ display:block;
   border-style: solid;
   height: 150px;
   border-radius: 100px;
+  background-color: rgba(0,0,0,0);
+}
+.gray{
+  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+  filter: grayscale(100%);
 }
 .fa, .fas, .far {
 font-size: 4rem;
@@ -261,7 +266,7 @@ font-size: 4rem;
   display: inline-block;
 }
 .mod-4{
-  background-color: rgba(83,72,209,0.24);
+  background-color: rgba(120, 111, 218, 0.24);
   color: #5348D1;
 }
 .mod-4:hover {
@@ -311,7 +316,7 @@ font-size: 4rem;
   display: inline-block;
 }
 .mod-8{
-  background-color: rgba(100, 22, 163, 0.24);
+  background-color: rgba(180, 125, 224, 0.24);
   color:#B148D1;
 }
 .mod-8:hover {
