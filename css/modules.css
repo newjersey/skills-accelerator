@@ -11,6 +11,11 @@ label{
   opacity: 0.5;
   text-decoration: none;
 }
+.isDisabledTemp {
+  color: currentColor;
+  opacity: 0.5;
+  text-decoration: none;
+}
 .show{
   display: block;
 }
@@ -325,6 +330,11 @@ margin-bottom: 1rem;
   border-radius: 0;
   padding: 0.75rem 2.25rem;
   font-weight: 200;
+  text-decoration: none;
+}
+a.int-btn:hover{
+  text-decoration: none;
+  color: #ffffff;
 }
 .int-1{
   background-color: #D1484D;
