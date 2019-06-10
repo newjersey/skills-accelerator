@@ -645,11 +645,20 @@ ul.priv-list{
     width: 90%;
     height: 300px;
   }
+  .list-items {
+    width: 100%;
+  }
+  .list-row{
+    margin-left:0;
+  }
  
 }
 @media screen and (min-width: 731px) and (max-width: 1200px){
   .list-items {
-    width: 40%;
+    width: 25%;
+  }
+  .list-row{
+    margin-left:0;
   }
   .list-title {
     width: 80%;
