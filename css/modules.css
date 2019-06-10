@@ -683,7 +683,8 @@ background-color: rgba(0,0,0,0);
 }
 
 .expert-list.m-1 p .title{
-  color:rgba(209,72,77,0.6);
+  color:#D1484D;
+  opacity: 0.5;
   font-size: 14px;
   font-weight: 400;
 }
