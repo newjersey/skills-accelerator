@@ -42,9 +42,9 @@ var answer_correct = document.querySelectorAll('.answer-correct');
 	
 	  else{
       answer_correct[index].className="answer_correct";
-      answer_correct[index].className+="answer_correct hide";
-      answer_wrong[index].className-="answer_wrong";
-      answer_wrong[index].className+="answer_correct show";
+      answer_correct[index].className="answer_correct hide";
+      answer_wrong[index].className="answer_wrong";
+      answer_wrong[index].className="answer_correct show";
 	 // answer_correct[index].classList.replace('show','hide');
 	 // answer_wrong[index].classList.replace('hide','show');
 	
