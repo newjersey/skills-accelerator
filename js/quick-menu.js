@@ -36,4 +36,6 @@ function onScroll(e) {
     padding.classList.remove('padding');        
   }                      
 }
+
 document.addEventListener('scroll', onScroll);
+document.attachEvent('scroll', onScroll);
