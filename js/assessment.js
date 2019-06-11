@@ -30,16 +30,23 @@ var answer_correct = document.querySelectorAll('.answer-correct');
 	
 	  if(getRadioVal(this.form, 'questions') == "correct")
 	  {
-	
-	  answer_wrong[index].classList.replace('show','hide');
-	  answer_correct[index].classList.replace('hide','show');
+      answer_wrong[index].className="answer-wrong";
+      answer_wrong[index].className="answer-wrong hide";
+      answer_correct[index].className="answer_correct";
+      answer_correct[index].className="answer_correct show";
+
+	  //answer_wrong[index].classList.replace('show','hide');
+	  //answer_correct[index].classList.replace('hide','show');
 	
 	  }
 	
 	  else{
-	
-	  answer_correct[index].classList.replace('show','hide');
-	  answer_wrong[index].classList.replace('hide','show');
+      answer_correct[index].className="answer_correct";
+      answer_correct[index].className+="answer_correct hide";
+      answer_wrong[index].className-="answer_wrong";
+      answer_wrong[index].className+="answer_correct show";
+	 // answer_correct[index].classList.replace('show','hide');
+	 // answer_wrong[index].classList.replace('hide','show');
 	
 	  }
 	  };
