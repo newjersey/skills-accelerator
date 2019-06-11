@@ -100,16 +100,19 @@ function printChecked(id, req_corr){
   }
  
   if((selectedItems == req_corr) && flag == 0){
-    answer_wrong[index].classList.replace('show','hide');
-    answer_correct[index].classList.replace('hide','show');
+   
+    answer_wrong[index].className="answer_wrong";
+    answer_wrong[index].className="answer_wrong hide";
+    answer_correct[index].className="answer_correct";
+    answer_correct[index].className="answer_correct show";
     
     }
   
     else {
-    
-    answer_correct[index].classList.replace('show','hide');
-    answer_wrong[index].classList.replace('hide','show');
-    
+      answer_correct[index].className="answer_correct";
+      answer_correct[index].className="answer_correct hide";
+      answer_wrong[index].className="answer_wrong";
+      answer_wrong[index].className="answer_wrong show";
     }
   
   

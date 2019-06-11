@@ -10,24 +10,29 @@ var origOffsetY = sticky.offsetTop;
 function onScroll(e) {
   for (var i = 0; i < els.length; i++) {
   if (window.scrollY >= origOffsetY-50) {
-    sticky.classList.replace('sticky','fixed');
-    els[i].classList.replace('quick-menu','vertical');
+    sticky.classList.remove('sticky');
+    sticky.classList.add('fixed');
+    els[i].classList.remove('quick-menu');
+    els[i].classList.add('vertical');
   }
   else 
   {
-    sticky.classList.replace('fixed','sticky');
-    els[i].classList.replace('vertical','quick-menu');
-
+    sticky.classList.remove('fixed');
+    sticky.classList.add('sticky');
+    els[i].classList.remove('vertical');
+    els[i].classList.add('quick-menu');
   }
   }
   if (window.scrollY >= origOffsetY-50) {
-    page.classList.replace('page-body','page-body-rep');
+    page.classList.remove('page-body');
+    page.classList.add('page-body-rep');
     padding.classList.add('padding');
  
   }
   else 
   {
-    page.classList.replace('page-body-rep','page-body');
+    page.classList.remove('page-body-rep');
+    page.classList.add('page-body');
     padding.classList.remove('padding');        
   }                      
 }
