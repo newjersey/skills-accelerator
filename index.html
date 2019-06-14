@@ -207,11 +207,10 @@
         onload="if(submitted) {window.location='thankyou.html';}">
       </iframe>
 
-      <label for="subscribe form"></label>
-    <form name="subscribe form" class="custom-form" action="https://docs.google.com/forms/d/e/1FAIpQLSffm1XsAT2c3xJG5H2RFpfkZLk2i2lTBLJfql1U7jSgdHLPaw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;">
-      <input type="text" placeholder="EMAIL ADDRESS" name="entry.630003726">
-      <label for="subscribe form button"></label>
-      <button name="subscribe form button" class="form-button" type="submit">SIGN UP</button>
+    
+    <form name="subscribe form" class="custom-form" action="https://docs.google.com/forms/d/e/1FAIpQLSffm1XsAT2c3xJG5H2RFpfkZLk2i2lTBLJfql1U7jSgdHLPaw/formResponse" method="post" target="hidden_iframe" onsubmit="submitted=true;" aria-label="form to subscribe">
+      <input type="text" placeholder="EMAIL ADDRESS" name="entry.630003726" aria-hidden=”true”>
+      <button name="subscribe form button" class="form-button" type="submit" aria-hidden=”true”>SIGN UP</button>
       
     </form>
   </div>
@@ -233,7 +232,7 @@
               </div>
                 <div class="footer-50">
                     <p>Created in Partnership with:</p>
-                    <a href="http://thegovlab.org" alt="govlab logo" target="_blank"><img src="images/govlab.png"></a>
+                    <a href="http://thegovlab.org" alt="govlab logo" target="_blank"><img alt="GovLab Logo" src="images/govlab.png"></a>
                   </div>
             </div>
             <div class="row no-gutters" style="text-align:center; margin-left:auto; margin-right:auto">
