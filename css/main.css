@@ -265,12 +265,15 @@ display:block;
 .gray{
  color: #aeaeae;
  background-color: #e0e0e0;
+ -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
+ filter: grayscale(100%);
 }
 .gray i{
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
 }
+
 .fa, .fas, .far {
 font-size: 4rem;
 }
