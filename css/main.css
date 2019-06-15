@@ -259,9 +259,17 @@ display:block;
   border-radius: 100px;
   background-color: rgba(0,0,0,0);
 }
+.gray-exp{
+  color: #aeaeae;
+}
 .gray{
-  -webkit-filter: grayscale(100%); /* Safari 6.0 - 9.0 */
-  filter: grayscale(100%);
+ color: #aeaeae;
+ background-color: #e0e0e0;
+}
+.gray i{
+  height: auto;
+  padding-bottom: 25px;
+  display: inline-block;
 }
 .fa, .fas, .far {
 font-size: 4rem;
