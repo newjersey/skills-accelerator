@@ -38,4 +38,4 @@ function onScroll(e) {
 }
 
 document.addEventListener('scroll', onScroll);
-document.attachEvent('scroll', onScroll);
+document.attachEvent('onscroll', onScroll);
