@@ -14,7 +14,8 @@ function getRadioVal(form, name) {
 
 
 var answer_correct = document.querySelectorAll('.answer-correct');
-	var answer_wrong = document.querySelectorAll('.answer-wrong');
+  var answer_wrong = document.querySelectorAll('.answer-wrong');
+  var answer_partial = document.querySelectorAll('.answer-partial');
 	var questions = document.querySelectorAll('.questions-form');
 	var submit_index = document.querySelectorAll('.getVal');
 	var buttonsCount = submit_index.length;
@@ -101,20 +102,25 @@ function printChecked(id, req_corr){
  
   if((selectedItems == req_corr) && flag == 0){
    
-    answer_wrong[index].className="answer_wrong";
-    answer_wrong[index].className="answer_wrong hide";
-    answer_correct[index].className="answer_correct";
-    answer_correct[index].className="answer_correct show";
+    answer_wrong[index].className="hide";
+    answer_correct[index].className="show";
+    answer_partial[index].className="hide";
     
     }
-  
+    else if((selectedItems < req_corr) && flag == 0){
+   
+      answer_wrong[index].className="hide";
+      answer_partial[index].className="show";
+      answer_correct[index].className="hide";
+      
+      }
     else {
-      answer_correct[index].className="answer_correct";
-      answer_correct[index].className="answer_correct hide";
-      answer_wrong[index].className="answer_wrong";
-      answer_wrong[index].className="answer_wrong show";
+      answer_wrong[index].className="show";
+      answer_correct[index].className="hide";
+      answer_partial[index].className="hide";
     }
-  
+
+
   
 }		
 
