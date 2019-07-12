@@ -1,3 +1,6 @@
+.insa-logo{
+height: 40px;
+}
 .cc-link{
 text-decoration: underline;
 cursor: pointer;
@@ -212,7 +215,7 @@ display:block;
   width: 100%;
 }
 .col-48 {
-  width: 48%;
+  width: 30%;
   float: left;
   height: 100%;
   padding-left: 20px;
@@ -224,6 +227,7 @@ display:block;
   padding-top: 16px;
   text-decoration: none;
 }
+
 .modules{
   width: 80%;
   margin-left: auto;
@@ -677,6 +681,10 @@ ul.priv-list{
   .col-48 {
     display: none;
   }
+  .mob-logo{
+    display: block;
+    width: 80%;
+  }
   .all-text{
     padding-top: 80px;
   }
@@ -704,6 +712,10 @@ ul.priv-list{
 @media screen and (min-width: 601px) and (max-width: 730px){
   .col-48 {
     display: none;
+  }
+  .mob-logo{
+    display: block;
+    width: 80%;
   }
   body .col-20{
     width: 100%; 
