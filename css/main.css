@@ -65,6 +65,7 @@ a.modal-button-link{
   display: none;
 }
 
+
 .footer-50{
   width: 50%;
   text-align:center;
@@ -394,26 +395,84 @@ font-size: 4rem;
   color: #5348D1;
 }
 .mod-4 i{
- 
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
 }
-.mod-5{
- 
+.half-1{
+  display: flex;
+  flex-direction: column;
+  height: 50%;
+  width:100%;
   background-color: rgba(72,177,209,0.24);
-  color: #48B1D1;
 }
-.mod-5:hover {
+.half-1:hover {
+  cursor: pointer;
   color: #48B1D1;
   text-decoration: none;
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
+.half-1 p{
+  padding-top: 10px;
+}
+.half-2{
+  display: flex;
+  flex-direction: row;
+  height: 50%;
+  width:100%;
+  background-color: rgba(72, 177, 209, 0.397);
+  align-items: flex-end;
+  justify-content: center;
+}
+.half-2:hover {
+  cursor: pointer;
+  color: #48B1D1;
+  text-decoration: none;
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+}
+
+.half-2 p{
+  color: rgb(66, 144, 170);
+}
+.mid-icon{
+  z-index:200;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height:0;
+}
+.mod-5{
+  background-color: rgba(72,177,209,0.24);
+  color: #48B1D1;
+}
+.mod-5:hover {
+  text-decoration: none;
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  color: #48B1D1;
+}
 .mod-5 i{
+ 
   height: auto;
   padding-bottom: 25px;
   display: inline-block;
 }
+/* .mod-5{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding-top:0;
+  color: #48B1D1;
+}
+.mod-5:hover .mid-icon{
+  text-decoration: none;
+  transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport)
+}
+.mid-icon i{
+  height: auto;
+} */
+
+
 .mod-6{
   background-color: rgba(72,209,209,0.24);
   color: rgb(27, 109, 109);

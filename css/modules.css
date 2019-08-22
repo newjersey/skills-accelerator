@@ -31,6 +31,16 @@ label{
   overflow: hidden;
 }
 
+.two-vid{
+  display: flex;
+  width: 50%;
+  text-align: center;
+  padding: 10px;
+}
+.two-vid iframe{
+width: 100%;
+height: 450px;
+}
 .mod-video{
   text-align: center;
 }
@@ -38,9 +48,11 @@ label{
   width: 70%;
   height: 450px;
 }
-
-
-
+.flex-vid{
+  display:flex;
+  flex-direction: row;
+  width: 100%;
+}
 .module-hero{
   z-index: 100;
   padding-left: 15%;
@@ -110,6 +122,19 @@ label{
   position:absolute;
   width: 100%;
 }
+.button-wrap{
+  margin-top: -25px;
+  z-index: 1000;
+  position:absolute;
+  width: 100%;
+}
+.button-overlap-2{
+  display:flex;
+  flex-direction: row;
+  padding: 0 20px 0 20px;
+}
+
+
 .interview-section{
   text-align: center;
   background-color: #222222;
@@ -409,10 +434,31 @@ padding-left: 30px;
 .material-icons.md-light { color: #D1484D; }
 
 @media screen and (min-width: 320px) and (max-width: 600px) {
+  .stick-5.sticky {
+    padding-top: 120px;
+  }
+.button-overlap-2{
+    display:flex;
+    flex-direction: column;
+  }
+  .button-wrap .button-section-mod{
+    padding: 10px 0 10px 0;
+  }
   .expert p{
     font-weight: 200;
     text-align: left;
   }
+  .flex-vid{
+    display:flex;
+    flex-direction: column;
+    width: 100%;
+  }
+.two-vid{
+  display: flex;
+  width: 100%;
+  text-align: center;
+  padding: 10px;
+}
   .mod-video iframe{
     width: 100%;
     height: 200px;
@@ -564,6 +610,27 @@ padding-left: 30px;
       font-size: 0.6rem;
       font-weight: 400;
     }
+    .stick-5.sticky{
+      padding-top: 120px;
+    }
+ .button-overlap-2{
+      display:flex;
+      flex-direction: column;
+    }
+    .button-wrap .button-section-mod{
+      margin: 10px 0 10px 0;
+    }
+    .flex-vid{
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+    }
+  .two-vid{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
     .mod-video iframe{
       width: 100%;
       height: 400px;
@@ -644,6 +711,18 @@ padding-left: 30px;
 
 
   @media screen and (min-width: 801px) and (max-width: 1200px){
+    .flex-vid{
+      display:flex;
+      flex-direction: column;
+      width: 100%;
+    }
+
+  .two-vid{
+    display: flex;
+    width: 100%;
+    text-align: center;
+    padding: 10px;
+  }
     .interview-row .col-2p img{
       width: 90%;
       margin-right: 30px;
