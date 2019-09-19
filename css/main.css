@@ -741,7 +741,7 @@ ul.priv-list{
   .thin-footer{
     padding: 20px;
     flex-direction:column;
-    height: 300px;
+    height: 500px;
   }
   .thin-footer-mod{
     margin-right:0;
@@ -829,7 +829,7 @@ ul.priv-list{
   .thin-footer{
     padding: 20px;
     flex-direction:column;
-    height: 300px;
+    height:500px;
   }
   .thin-footer-mod{
     margin-right:0;
@@ -864,7 +864,7 @@ ul.priv-list{
   .thin-footer{
     padding: 20px;
     flex-direction:column;
-    height: 300px;
+    height: 500px;
   }
   .thin-footer-mod{
     margin-right:0;
