@@ -524,10 +524,12 @@ font-size: 4rem;
 }
 .mod-7{
   background-color: rgba(72,209,151,0.24);
-  color: rgba(0,66,0,0.7);
+  color: rgba(0,66,0,1);
 }
 .mod-7:hover {
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
+  text-decoration: none;
+  color: rgba(0,66,0,1);
 }
 .mod-7 i{
   height: auto;
