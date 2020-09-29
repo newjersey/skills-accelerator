@@ -571,6 +571,8 @@ font-size: 4rem;
 }
 
 .mod-10:hover {
+  text-decoration: none;
+  color: #D16D48;
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .mod-10 i{
@@ -584,6 +586,8 @@ font-size: 4rem;
 }
 
 .mod-11:hover {
+  text-decoration: none;
+  color: rgb(19, 32, 73);
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .mod-11 i{
@@ -597,6 +601,8 @@ font-size: 4rem;
 }
 
 .mod-12:hover {
+  text-decoration: none;
+  color: rgb(15, 73, 54);
   transform: scale(1.1); /* (150% zoom - Note: if the zoom is too large, it will go outside of the viewport) */
 }
 .mod-12 i{
