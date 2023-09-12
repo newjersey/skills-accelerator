@@ -1,4 +1,3 @@
-
 ### SmarterNJ
 
 [The Innovation Skills Accelerator](https://innovation.nj.gov/skills) (InSA) is a free, online program to train public entrepreneurs to use innovative methods, including design thinking,evidence-based decisionmaking and collective intelligence, to solve public problems. Each module includes video instruction, interviews with leading public sector innovators from around the world, readings and self-assessments.
@@ -11,10 +10,22 @@ InSA was developed by the New Jersey Office of Innovation + Lab. If you're inter
 
 If you have suggestions or feedback, you can send them to team@innovation.nj.gov. You can also open a Github pull request or issue.
 
+### Developer notes
+
+#### If you're having trouble pushing to Github and the command is hanging up...
+
+Run the following command before pushing:
+
+```bash
+git config --local http.postBuffer 524288000
+```
+
+[Git doc reference](https://git-scm.com/docs/git-config#Documentation/git-config.txt-httppostBuffer)
+
 ### License and Credit
 
 The State of New Jersey makes the content provided here available to the public and anyone may view, copy or distribute State information found here without obligation to the State, unless otherwise stated on particular material or information to which a restriction on free use may apply. Government-produced materials provided here are licensed under a [Creative Commons 4.0 Attribution License](https://creativecommons.org/licenses/by/4.0/deed.ast).
-Third party libraries, services and materials (including Font Awesome, Google Fonts, Bootstrap retain their original licenses.  
+Third party libraries, services and materials (including Font Awesome, Google Fonts, Bootstrap retain their original licenses.
 
 InSA terms are available [here](https://innovation.nj.gov/skills/tos.html).
 
